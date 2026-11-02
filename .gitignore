@@ -1,0 +1,9 @@
+*.class
+out/
+bin/
+.idea/
+*.iml
+.vscode/
+.settings/
+.classpath
+.project
