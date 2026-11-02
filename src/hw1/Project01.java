@@ -8,6 +8,7 @@ public class Project01 {
         int q1val1 = 6;
         int q1val2 = 12;
 
+        System.out.println("git test");
         System.out.println("請設計一隻Java程式,計算12,6這兩個數值的和與積");
         System.out.println("----------");
         System.out.println(q1val1+" + "+q1val2+" = "+sum(q1val1, q1val2));
