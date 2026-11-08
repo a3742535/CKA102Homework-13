@@ -6,7 +6,7 @@ public class Hw2Project07 {
     }
 
     static void printTriangleWithLetter(int max){
-        char letter = 65;
+        char letter = 65;  //test with ASCII value of 'A'
 
         for (int i = 1; i <= max; i++) {
             for (int j = 1; j <= i; j++) {
