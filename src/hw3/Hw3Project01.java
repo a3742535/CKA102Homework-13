@@ -5,6 +5,8 @@ package hw3;
 import java.util.Scanner;
 
 public class Hw3Project01 {
+    private Scanner scanner = new Scanner(System.in);
+
     public static void main(String[] args) {
         while (true) {
             Hw3Project01 hw3P1 = new Hw3Project01();
@@ -45,19 +47,16 @@ public class Hw3Project01 {
     }
 
     boolean exitProgram() {
-        Scanner scanner = new Scanner(System.in);
         System.out.print("要繼續執行嗎? (y/n): ");
         String input = scanner.next();
         System.out.println("===================================");
         if (!input.equalsIgnoreCase("y")) {
-            scanner.close();
             return true;
         }
         return false;
     }
 
     public int[] getThreeNumbersInput() {
-        Scanner scanner = new Scanner(System.in);
         System.out.print("請輸入三個整數: ");
         int number1 = scanner.nextInt();
         int number2 = scanner.nextInt();

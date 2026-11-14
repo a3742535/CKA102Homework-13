@@ -10,6 +10,7 @@ public class Hw3Project02 {
     private int targetNum = -1;
     private boolean gameOver = false;
     private int[] guessNum = new int[]{-1, -1};
+    private Scanner scanner = new Scanner(System.in);
 
     public static void main(String[] args) {
         while (true) {
@@ -76,19 +77,16 @@ public class Hw3Project02 {
     }
 
     boolean exitProgram() {
-        Scanner scanner = new Scanner(System.in);
         System.out.print("要繼續執行嗎? (y/n): ");
         String input = scanner.next();
         System.out.println("===================================");
         if (!input.equalsIgnoreCase("y")) {
-            scanner.close();
             return true;
         }
         return false;
     }
 
     public int getOneNum(String prompt) {
-        Scanner scanner = new Scanner(System.in);
         System.out.print(prompt);
         int num = scanner.nextInt();
         return num;

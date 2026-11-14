@@ -8,6 +8,7 @@ public class Hw3Project03 {
     private final int min = 1;
     private final int max = 49;
     private int excludeKey;
+    private Scanner scanner = new Scanner(System.in);
 
     public static void main(String[] args) {
         while (true) {
@@ -27,7 +28,6 @@ public class Hw3Project03 {
 
 
     public void isAutoGet6Nums(String nums) {
-        Scanner scanner = new Scanner(System.in);
         System.out.print("要自動幫您選取六個數字嗎? (y/n): ");
         String input = scanner.next();
 
@@ -88,19 +88,16 @@ public class Hw3Project03 {
     }
 
     boolean exitProgram() {
-        Scanner scanner = new Scanner(System.in);
         System.out.print("要繼續執行嗎? (y/n): ");
         String input = scanner.next();
         System.out.println("===================================");
         if (!input.equalsIgnoreCase("y")) {
-            scanner.close();
             return true;
         }
         return false;
     }
 
     public int getOneNum(String prompt) {
-        Scanner scanner = new Scanner(System.in);
         System.out.print(prompt);
         int num = scanner.nextInt();
         return num;
