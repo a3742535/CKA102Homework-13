@@ -1,6 +1,7 @@
 // 班上有8位同學,他們進行了6次考試結果如資料所示
 // 請算出每位同學考最高分的次數
 
+
 package hw4;
 public class Hw4Project06 {
     private int studentsScore[][] = {
